@@ -96,3 +96,33 @@ Mon 26 Sep 2022 01:51:51 AM UTC:
  1 file changed, 29 insertions(+)
  tests:  0|0
 b94dc1c
+Mon 26 Sep 2022 01:52:25 AM UTC: 
+ treemap.c | 19 +------------------
+ 1 file changed, 1 insertion(+), 18 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:49:9: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   49 |  return NULL;
+      |         ^~~~
+treemap.c:48:6: note: declared here
+   48 | void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      |      ^~~~~~~~~~~~~
+treemap.c: At top level:
+treemap.c:52:35: error: ‘key’ undeclared here (not in a function)
+   52 |   TreeNode * new = createTreeNode(key,value);
+      |                                   ^~~
+treemap.c:52:39: error: ‘value’ undeclared here (not in a function)
+   52 |   TreeNode * new = createTreeNode(key,value);
+      |                                       ^~~~~
+treemap.c:53:3: error: expected identifier or ‘(’ before ‘if’
+   53 |   if(tree->current==NULL)
+      |   ^~
+treemap.c:55:5: error: expected identifier or ‘(’ before ‘else’
+   55 |     else{
+      |     ^~~~
+treemap.c:64:1: error: expected identifier or ‘(’ before ‘}’ token
+   64 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+2f3280b
