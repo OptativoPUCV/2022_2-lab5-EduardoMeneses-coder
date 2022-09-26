@@ -22,3 +22,9 @@ treemap.c:48:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 c0de483
+Mon 26 Sep 2022 12:41:07 AM UTC: 
+ treemap.c | 25 +++++++++++++------------
+ 1 file changed, 13 insertions(+), 12 deletions(-)
+ tests:  11|6
+total_score: 15/70
+567e85a
