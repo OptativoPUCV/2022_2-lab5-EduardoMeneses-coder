@@ -58,7 +58,8 @@ if(x->left == NULL){
   else{
     while (x->left != NULL){
       x = x->left;
-    }
+        }
+      }
     return x;
 }
 
