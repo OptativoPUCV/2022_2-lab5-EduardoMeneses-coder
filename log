@@ -126,3 +126,24 @@ treemap.c:64:1: error: expected identifier or ‘(’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 2f3280b
+Mon 26 Sep 2022 01:52:36 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c:52:35: error: ‘key’ undeclared here (not in a function)
+   52 |   TreeNode * new = createTreeNode(key,value);
+      |                                   ^~~
+treemap.c:52:39: error: ‘value’ undeclared here (not in a function)
+   52 |   TreeNode * new = createTreeNode(key,value);
+      |                                       ^~~~~
+treemap.c:53:3: error: expected identifier or ‘(’ before ‘if’
+   53 |   if(tree->current==NULL)
+      |   ^~
+treemap.c:55:5: error: expected identifier or ‘(’ before ‘else’
+   55 |     else{
+      |     ^~~~
+treemap.c:64:1: error: expected identifier or ‘(’ before ‘}’ token
+   64 | }
+      | ^
+Compilation failed
+69aa2ba
