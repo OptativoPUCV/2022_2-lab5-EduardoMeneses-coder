@@ -299,3 +299,17 @@ test.c:250:7: error: assignment to ‘TreeNode *’ from ‘int’ makes pointer
 cc1: all warnings being treated as errors
 Compilation failed
 4deba43
+Mon 26 Sep 2022 02:37:44 AM UTC: 
+ treemap.c | 14 +++++++++++---
+ 1 file changed, 11 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:50:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   50 |   return NULL;
+      |          ^~~~
+treemap.c:48:6: note: declared here
+   48 | void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      |      ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cc39a2a
