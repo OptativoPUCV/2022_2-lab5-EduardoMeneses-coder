@@ -325,3 +325,9 @@ Thu 29 Sep 2022 12:05:50 AM UTC:
  tests:  26|1
 total_score: 55/70
 adb7052
+Thu 29 Sep 2022 12:08:08 AM UTC: 
+ treemap.c | 40 ++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 40 insertions(+)
+ tests:  29|0
+total_score: 70/70
+092fed8
